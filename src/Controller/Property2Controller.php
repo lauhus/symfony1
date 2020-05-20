@@ -6,15 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class PropertyController extends AbstractController{
+class Property2Controller extends AbstractController{
 
     /**
-     * @Route("/biens1",name="property.index")
+     * @Route("/biens2",name="property.index2")
      * @return Response
      */
     public function index() : Response
         {
-            return $this->render('property/index.html.twig',[
+            return $this->render('property/index2.html.twig',[
                 'current_menu' => 'properties'
             ]);
         }
